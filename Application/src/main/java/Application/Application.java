@@ -22,9 +22,6 @@ public class Application {
     private static Ec2Client ec2;
     private static S3Client s3;
     private static SqsClient sqs;
-    private static final AwsCredentialsProvider creds = StaticCredentialsProvider.create(AwsBasicCredentials
-            .create("AKIAJMRQRPUHJUHARONQ",
-                    "Fb/PKNQhzkTKjMMf1og/hZGNPiJv/X/7o4vfFczx"));
     private static final Region region = Region.US_WEST_2;
     private static final String amiId = "ami-0aaf300e7e9b2a831";
     private static String id;

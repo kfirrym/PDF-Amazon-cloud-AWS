@@ -28,9 +28,6 @@ class ManagerData{
     final ConcurrentLinkedQueue<S3Client> s3Clients = new ConcurrentLinkedQueue<>();
     final ConcurrentLinkedQueue<SqsClient> sqsClients = new ConcurrentLinkedQueue<>();
 
-    final AwsCredentialsProvider creds = StaticCredentialsProvider.create(AwsBasicCredentials
-            .create("AKIAJMRQRPUHJUHARONQ",
-                    "Fb/PKNQhzkTKjMMf1og/hZGNPiJv/X/7o4vfFczx"));
     final Region region = Region.US_WEST_2;
     final String amiId = "ami-0aaf300e7e9b2a831";
 }

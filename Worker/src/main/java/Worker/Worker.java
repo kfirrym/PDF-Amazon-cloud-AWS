@@ -24,9 +24,6 @@ import javax.imageio.*;
 public class Worker {
 
     private static final Region region = Region.US_WEST_2;
-    private static final AwsCredentialsProvider creds = StaticCredentialsProvider.create(AwsBasicCredentials
-                    .create("AKIAJMRQRPUHJUHARONQ",
-                            "Fb/PKNQhzkTKjMMf1og/hZGNPiJv/X/7o4vfFczx"));
     private static String app_id;
     private static S3Client s3;
     private static SqsClient sqs;
